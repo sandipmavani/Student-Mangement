@@ -69,6 +69,8 @@ export default {
         },
         { text: 'Email', value: 'email' },
         { text: 'Mobile', value: 'mobile' },
+          { text: 'APC Name', value: 'apc' },
+
       ],
       // items: [],
       searchVm: {
