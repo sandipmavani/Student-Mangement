@@ -9,6 +9,8 @@ export class User {
     this.mobile = "";
     this.homephone = "";
     this.workphone = "";
+    this.studentId = "";
+    this.passingYear = "";
     this.apc = "";
   }
 }
