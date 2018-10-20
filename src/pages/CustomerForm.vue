@@ -23,6 +23,13 @@
                 <v-container fluid grid-list-sm>
               <v-layout row wrap >
                 <v-flex md3 sm6 xs12 class="mx-1 px-0">
+                  <v-text-field name="studentId" label="Student Id" hint="Student Id Required" value="Input text" v-model="customer.fullname" class="input-group--focused" required></v-text-field>
+                </v-flex>
+
+                <v-flex md4 xs12>
+                  <v-select required v-bind:items="years" label="Passing Year" v-model="customer.passingYear"></v-select>
+                </v-flex>
+                <v-flex md3 sm6 xs12 class="mx-1 px-0">
                   <v-text-field name="fullname" label="Student Name" hint="Full Name Required" value="Input text" v-model="customer.fullname" class="input-group--focused" required></v-text-field>
                 </v-flex>
                 <v-flex md3 sm6  xs12  class="mx-1 px-0">
@@ -75,7 +82,8 @@ export default {
             return true;
         }]
       },
-      items: ["ATL", "VVN", "SRT", "NDN"]
+      items: ["ATL", "VVN", "SRT", "NDN"],
+        years: [2012, 2011, 2010, 2009]
     }
   },
   computed: {
